@@ -1,17 +1,33 @@
-import { GET_ALBUMS } from "./constants";
+import { act } from "react-dom/test-utils";
+import { ALBUMS } from "./constants";
+
 
 const initialState = {
-    albums: []
-};
+    albumData: [],
+    isLoading: false,
+    isError: false
+}
 
-function reducer (state = initialState, action) {
-    if(action.type === GET_ALBUMS){
-        return Object.assign({}, state, {
-            albums: state.albums.concat(action.payloadj)
-        })
+const reducer = (state = initialState, action) => {
+    switch(action.type) {
+        case ALBUMS.LOAD:
+            return {
+                ...state,
+                isLoading: true,
+                isError: false,
+            }
+
+        case ALBUMS.LOAD_SUCCESS:
+            return {
+                ...state,
+                albumData: action.albumData,
+                isLoading: false
+            }
+
+
+        default:
+            return state;
     }
-    return state;
 };
-
 
 export default reducer;

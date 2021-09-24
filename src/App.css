@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "Oxygen";
+  src: url("./assets/fonts/Oxygen-Regular.ttf")
+}
+
 .App {
   min-height: 100vh;
   display: flex;
+  font-family: "Oxygen";
   justify-content: center;
   align-items: center;
   align-content: center;

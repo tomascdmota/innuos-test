@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+}
+
+.card {
+    width: 320px;
+    height: 380px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    
+    border: 1px solid rgba(0, 17, 34, 0.10) ;
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+.card-container p {
+    font-family: "Oxygen", sans-serif;
+    width: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #fff;
+    opacity: 80%;
+}
+
+.title {
+    font-weight: 800;
+}
+
+
+.album-data {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.album-cover img {
+    max-width: 100%;
+}
+    
+.album-cover-icon  {
+    position: relative;
+    bottom: 50px;
+    right: 25px;
+    width: 20px;
+    float: right;
+    z-index: 999;
+  }

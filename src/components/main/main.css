@@ -1,7 +1,8 @@
 .main {
-    display: flex;
-    align-items: center;
-    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    padding: 25px;
+    gap: 1rem;
 }
 
 .albums-button {
